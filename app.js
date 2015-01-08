@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $('.cat').on('click', function() {
-    var currentScore = +$('.clicks').text()
-    $('.clicks').text(currentScore + 1)
+  $('.cats').on('click','.cat-photo', function() {
+    var currentScore = +$(this).siblings('.click-count').text()
+    $(this).siblings('.click-count').text(currentScore + 1)
   });
 });
